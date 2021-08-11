@@ -58,6 +58,7 @@ function filterItems(e){
     var text= e.target.value.toLowerCase();
 
     //get list items
+    var items= itemList.getElementsByTagName('li');
     Array.from(items).forEach(function(item){
         var itemName= item.firstChild.textContent;
         if(itemName.toLowerCase().indexOf(text)!=-1){
